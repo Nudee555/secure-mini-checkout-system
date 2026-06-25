@@ -1,0 +1,415 @@
+# Secure Mini E-Commerce Checkout System
+
+## Section 1: Project Overview & Executive Summary
+
+The Secure Mini E-Commerce Checkout System is a software engineering project designed to reduce checkout failures, pricing errors, and lost sales. The system will use separate modules for user login, product management, shopping cart functions, and checkout processing. The goal is to improve reliability, simplify maintenance, and support future growth. Success will be measured through successful test execution, accurate order calculations, completed checkouts, and documented business value. The project focuses on solving business problems through structured software engineering practices rather than simply building a working application.
+
+## Section 2: Stakeholders & Business Problem Statement
+
+### Stakeholders
+
+The primary stakeholders are online customers, store owners, sales managers, customer support staff, and software developers. Customers depend on the system to complete purchases quickly and accurately. Store owners and managers rely on successful transactions to generate revenue. Customer support staff handle issues that arise from checkout failures, while developers maintain and improve the platform.
+
+### Business Problem Statement
+
+Many online businesses lose revenue when customers experience login issues, pricing errors, shopping cart failures, or checkout interruptions. Even small problems can cause customers to abandon purchases and shop elsewhere. The goal of this project is to reduce these failures by creating a modular, well-tested checkout system that improves reliability, reduces maintenance effort, and protects business revenue.
+
+## Section 3: Business Impact Analysis
+
+The checkout process is one of the most important functions of an e-commerce platform because it directly affects revenue generation. If customers cannot log in, add products to their cart, calculate accurate totals, or complete purchases, the business risks losing sales and customer trust. Repeated failures may increase customer complaints, refund requests, and negative reviews.
+
+A modular and well-tested checkout system helps reduce downtime, improve customer satisfaction, and decrease support costs. By identifying defects through unit, integration, system, and acceptance testing before deployment, the business can avoid costly production failures. This proactive approach improves operational efficiency and helps protect long-term revenue while reducing maintenance and troubleshooting efforts.
+
+## Section 4: Business Requirements Analysis (WH Framework)
+
+### Who
+
+The primary users affected by checkout failures are customers, store owners, sales managers, and customer support teams. Customers may abandon purchases, while businesses may lose revenue and customer trust.
+
+### What
+
+The main problem is checkout failure caused by login issues, cart errors, pricing inaccuracies, or order processing defects. These issues directly affect the ability to complete sales.
+
+### When
+
+Failures are most damaging during peak shopping periods, seasonal promotions, product launches, and high-traffic events when customer demand is highest.
+
+### Where
+
+Problems can occur within the login module, product catalog, shopping cart, checkout process, database, or communication between modules.
+
+### Why
+
+Customers expect a fast and reliable checkout experience. When errors occur, they often leave the platform and may choose a competitor instead.
+
+### How
+
+The project addresses these risks through modular architecture, structured testing, documentation, and proactive defect prevention before deployment.
+
+## Section 5: Root Cause Analysis & Continuous Improvement Framework
+
+### Identify the Failure Point
+
+The checkout module represents the highest-risk area because it directly handles revenue-generating transactions. A failure in this module can prevent customers from completing purchases and immediately affect business revenue.
+
+### Trace the Failure Path
+
+The complete customer journey is reviewed from login through checkout. The investigation follows the path from authentication, product selection, shopping cart updates, price calculations, and payment processing to identify where the failure occurred.
+
+### Isolate the Affected Component
+
+Once the failure path is identified, the responsible module is isolated. The issue may originate in the login system, product catalog, shopping cart, checkout process, database, or communication between modules.
+
+### Validate the Corrective Action
+
+After the defect is corrected, unit tests, integration tests, system tests, and user acceptance tests are performed to confirm that the issue has been resolved and that no additional defects were introduced.
+
+### Implement Preventive Controls
+
+The root cause, corrective actions, lessons learned, and preventive measures are documented. This process reduces future incidents, improves system reliability, and supports continuous improvement efforts.
+
+## Section 6: Functional Requirements
+
+### FR-1 User Authentication
+
+The system shall allow registered users to log in using a username and password.
+
+### FR-2 Product Catalog
+
+The system shall display available products including product name, price, and inventory quantity.
+
+### FR-3 Shopping Cart Management
+
+The system shall allow users to add products, remove products, and update quantities within the shopping cart.
+
+### FR-4 Checkout Processing
+
+The system shall calculate order totals, taxes, and final purchase amounts before checkout is completed.
+
+### FR-5 Order Confirmation
+
+The system shall generate an order confirmation containing transaction details after a successful purchase.
+
+## Section 7: Non-Functional Requirements
+
+### NFR-1 Performance
+
+The system shall complete checkout transactions within three seconds under normal operating conditions.
+
+### NFR-2 Reliability
+
+The system shall maintain consistent operation and successfully process transactions without data loss.
+
+### NFR-3 Security
+
+The system shall protect user credentials and transaction data through secure authentication and access controls.
+
+### NFR-4 Availability
+
+The system shall remain available to users during normal business operations with minimal downtime.
+
+### NFR-5 Maintainability
+
+The modular architecture shall allow individual components to be updated, repaired, or enhanced without affecting unrelated modules.
+
+### NFR-6 Scalability
+
+The system shall support increasing numbers of users and transactions without significant performance degradation.
+
+### NFR-7 Usability
+
+The checkout process shall be simple, intuitive, and easy for customers to complete without additional assistance.
+
+## Section 8: Risk Assessment & Mitigation Strategy
+
+### Risk 1: User Login Failure
+
+Impact:
+Customers cannot access their accounts and may abandon purchases.
+
+Mitigation:
+Implement authentication testing, account validation checks, and error logging.
+
+### Risk 2: Incorrect Price Calculations
+
+Impact:
+Revenue loss, customer disputes, and reputational damage.
+
+Mitigation:
+Create automated unit tests to verify pricing, discounts, taxes, and final totals.
+
+### Risk 3: Shopping Cart Failure
+
+Impact:
+Customers cannot complete purchases, resulting in lost sales.
+
+Mitigation:
+Perform integration testing between the product catalog, cart, and checkout modules.
+
+### Risk 4: Checkout Processing Failure
+
+Impact:
+Transactions fail and revenue is immediately affected.
+
+Mitigation:
+Perform end-to-end testing and validate all checkout workflows before deployment.
+
+### Risk 5: Database Connectivity Issues
+
+Impact:
+Orders, inventory, and customer data may become unavailable.
+
+Mitigation:
+Implement monitoring, backup procedures, and database health checks.
+
+### Risk 6: Security Vulnerabilities
+
+Impact:
+Unauthorized access, data breaches, and compliance concerns.
+
+Mitigation:
+Apply secure authentication practices, access controls, and security testing procedures.
+
+### Risk 7: High Traffic Events
+
+Impact:
+System slowdowns and service interruptions during peak business periods.
+
+Mitigation:
+Perform load testing and scalability testing before production deployment.
+
+## Section 9: Return on Investment (ROI) & Success Metrics
+
+### Expected Business Benefits
+
+The project is expected to reduce checkout failures, improve customer satisfaction, increase completed purchases, and lower support costs. A reliable checkout system protects revenue and improves the customer experience.
+
+### Estimated Business Value
+
+Reducing checkout failures by even 2% can increase completed transactions and protect revenue. Lower support ticket volume also reduces operational costs. Automated testing decreases manual testing effort and allows defects to be discovered before deployment, reducing future maintenance expenses.
+
+### Success Metric 1: Checkout Completion Rate
+
+Measure the percentage of customers who successfully complete purchases after reaching the checkout page.
+
+Target:
+95% or greater checkout completion rate.
+
+### Success Metric 2: Defect Detection Before Deployment
+
+Measure the number of defects discovered through testing before release.
+
+Target:
+Identify and resolve critical defects before production deployment.
+
+### Success Metric 3: System Availability
+
+Measure the percentage of time the system remains operational and available.
+
+Target:
+99% availability during normal business operations.
+
+### Success Metric 4: Customer Support Reduction
+
+Measure the number of support tickets related to checkout issues.
+
+Target:
+Reduce checkout-related support requests by at least 50%.
+
+### Success Metric 5: Testing Coverage
+
+Measure the percentage of functional requirements covered by automated tests.
+
+Target:
+100% coverage of critical checkout functionality.
+
+## Section 10: System Architecture Overview
+
+### Module 1: User Authentication
+
+Responsibilities:
+
+- User registration
+- User login
+- Credential validation
+- Session management
+
+Inputs:
+
+- Username
+- Password
+
+Outputs:
+
+- Authentication status
+- User session
+
+### Module 2: Product Catalog
+
+Responsibilities:
+
+- Display products
+- Store product information
+- Maintain inventory records
+
+Inputs:
+
+- Product data
+- Inventory updates
+
+Outputs:
+
+- Product listings
+- Product details
+
+### Module 3: Shopping Cart
+
+Responsibilities:
+
+- Add products
+- Remove products
+- Update quantities
+- Calculate cart totals
+
+Inputs:
+
+- Customer selections
+
+Outputs:
+
+- Cart contents
+- Cart totals
+
+### Module 4: Checkout Processing
+
+Responsibilities:
+
+- Validate order
+- Calculate final totals
+- Process transactions
+
+Inputs:
+
+- Cart information
+- Customer information
+
+Outputs:
+
+- Order status
+- Purchase confirmation
+
+### Module 5: Database Layer
+
+Responsibilities:
+
+- Store customer records
+- Store product records
+- Store order history
+- Support data retrieval
+
+Inputs:
+
+- System transactions
+
+Outputs:
+
+- Stored data
+- Retrieved data
+
+## Section 11: Testing Strategy Overview
+
+### Test Level 1: Unit Testing
+
+Objective:
+
+Verify that individual modules function correctly in isolation.
+
+Modules Tested:
+
+- User Authentication
+- Product Catalog
+- Shopping Cart
+- Checkout Processing
+
+Examples:
+
+- Verify login validation
+- Verify product price retrieval
+- Verify cart calculations
+- Verify final order total calculations
+
+Expected Outcome:
+
+Each module performs correctly without dependency on other modules.
+
+### Test Level 2: Integration Testing
+
+Objective:
+
+Verify communication between modules.
+
+Integration Scenarios:
+
+- Login -> Product Catalog
+- Product Catalog -> Shopping Cart
+- Shopping Cart -> Checkout
+- Checkout -> Database
+
+Examples:
+
+- Verify products transfer correctly into cart
+- Verify cart totals pass correctly to checkout
+- Verify completed orders are stored in database
+
+Expected Outcome:
+
+Modules exchange data correctly without failures.
+
+### Test Level 3: System Testing
+
+Objective:
+
+Verify complete end-to-end business workflow.
+
+Test Scenario:
+
+Customer logs in, browses products, adds items to cart, completes checkout, and receives order confirmation.
+
+Expected Outcome:
+
+Entire checkout workflow completes successfully.
+
+### Test Level 4: User Acceptance Testing (UAT)
+
+Objective:
+
+Verify the system meets business expectations.
+
+Validation Questions:
+
+- Can users complete purchases easily?
+- Are totals calculated correctly?
+- Is checkout reliable?
+- Are confirmations generated correctly?
+
+Expected Outcome:
+
+Business stakeholders approve the system for production use.
+
+### Test Automation Strategy
+
+Tools:
+
+- Pytest
+- Selenium
+
+Automation Goals:
+
+- Reduce manual testing effort
+- Detect defects earlier
+- Improve deployment confidence
+- Support continuous improvement
+
+Expected Outcome:
+
+Faster testing cycles and fewer production defects.
