@@ -18,7 +18,7 @@ This project is a secure mini checkout system developed in Python to demonstrate
 ## Features
 
 * User authentication
-* Product catalog
+* Product Catalog
 * Product ID lookup
 * Price validation
 * Automated unit tests
